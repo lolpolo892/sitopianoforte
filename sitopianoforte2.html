@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Piano Mastery</h1>
+            <nav>
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#leaderboard">Leaderboard</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="how-it-works" class="section">
+            <div class="container">
+                <h2>How It Works</h2>
+                <p>Join the global community of piano enthusiasts! Choose from a curated list of classical piano pieces, record your performance, and upload it to the platform. Our scoring system will evaluate your performance based on accuracy, rhythm, and expression, placing you on the global leaderboard.</p>
+            </div>
+        </section>
+
+        <section id="leaderboard" class="section">
+            <div class="container">
+                <h2>Leaderboard</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Score</th>
+                            <th>Top Piece</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example rows -->
+                        <tr>
+                            <td>1</td>
+                            <td>Jane Doe</td>
+                            <td>98</td>
+                            <td>Beethoven - Moonlight Sonata</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John Smith</td>
+                            <td>95</td>
+                            <td>Chopin - Nocturne Op. 9 No. 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="upload" class="section">
+            <div class="container">
+                <h2>Upload Your Performance</h2>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <label for="piece">Choose a piece:</label>
+                    <select id="piece" name="piece">
+                        <option value="moonlight">Beethoven - Moonlight Sonata</option>
+                        <option value="nocturne">Chopin - Nocturne Op. 9 No. 2</option>
+                        <option value="clair-de-lune">Debussy - Clair de Lune</option>
+                        <!-- Franz Liszt's piano works -->
+                        <option value="hungarian-rhapsody-2">Liszt - Hungarian Rhapsody No. 2</option>
+                        <option value="liebestraum-3">Liszt - Liebestraum No. 3</option>
+                        <option value="la-campanella">Liszt - La Campanella</option>
+                        <option value="mephisto-waltz-1">Liszt - Mephisto Waltz No. 1</option>
+                        <option value="annees-de-pelerinage-1">Liszt - Années de Pèlerinage: Première Année</option>
+                        <option value="annees-de-pelerinage-2">Liszt - Années de Pèlerinage: Deuxième Année</option>
+                        <option value="annees-de-pelerinage-3">Liszt - Années de Pèlerinage: Troisième Année</option>
+                        <option value="sonata-in-b-minor">Liszt - Sonata in B Minor</option>
+                        <option value="transcendental-etude-5">Liszt - Transcendental Étude No. 5 (Feux Follets)</option>
+                        <option value="transcendental-etude-10">Liszt - Transcendental Étude No. 10</option>
+                        <option value="totentanz">Liszt - Totentanz</option>
+                        <option value="waldesrauschen">Liszt - Waldesrauschen</option>
+                        <option value="gnomenreigen">Liszt - Gnomenreigen</option>
+                        <option value="fantasia-on-themes-from-don-giovanni">Liszt - Fantasia on Themes from Don Giovanni</option>
+                    </select>
+
+                    <label for="file">Upload your recording:</label>
+                    <input type="file" id="file" name="file" accept="audio/*" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="signup" class="section">
+            <div class="container">
+                <h2>Sign Up</h2>
+                <form action="/signup" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Piano Mastery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
